@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #9999FF;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.main {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main>div,
+.block {
+    margin: 5px;
+    height: 180px;
+    width: 180px;
+    background-color: white;
+}
+
+.text {
+    font-size: 80px;
+    padding: 50px 60px;
+    color: #624464;
+    cursor: pointer;
+}
+
+.player {
+    color: aliceblue;
+    text-align: center;
+}
+
+.card {
+    width: 1600px;
+    padding: 40px;
+    background-color: #4d344e;
+    color: white;
+    font-size: 50px;
+
+}
+
+h1 {
+    color: #7b577e;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.buton {
+    display: flex;
+    justify-content: center;
+}
+
+.playAgain,
+.playComp {
+    justify-content: center;
+    border: none;
+    color: white;
+    background-color: #4d344e;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.playAgain {
+    display: none;
+}
+
+.playerText {
+    color: #7b577e;
+    font-size: 60px;
+}
+
+@media only screen and (max-width:1600px) and (max-height:900px) {
+
+    .main>div,
+    .block {
+        width: 130px;
+        height: 130px;
+    }
+
+    .main {
+        width: 500px;
+    }
+
+    .text {
+        font-size: 70px;
+        padding: 15px 40px ;
+    }
+    .card{
+        font-size: 40px;
+    }
+}
